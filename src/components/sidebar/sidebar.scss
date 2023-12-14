@@ -1,0 +1,86 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(233, 225, 225);
+  min-height: 100vh;
+  background-color: beige;
+
+  .top {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(99, 91, 138);
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(233, 225, 225);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(143, 136, 177);
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(226, 224, 237);
+        }
+
+        .icon {
+          font-size: 18px;
+          color: rgb(143, 136, 177);
+        }
+
+        span {
+          font-style: 13px;
+          font-weight: 500;
+          color: rgb(99, 91, 138);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .color {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid rgb(99, 91, 138);
+      cursor: pointer;
+      margin: 5px;
+
+      &:nth-child(1) {
+        background-color: rgb(75, 75, 75);
+      }
+      &:nth-child(2) {
+        background-color: rgb(250, 243, 229);
+      }
+    }
+  }
+}
